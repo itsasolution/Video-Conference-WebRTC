@@ -149,3 +149,14 @@ document.getElementById("mem").addEventListener("click", part)
 document.querySelector(".mem-repl").addEventListener("click", part)
 
 setTimeout(() => { participants.style.display = "none"; }, 4000);
+
+
+// loader
+let loader = document.querySelector(".loader")
+window.addEventListener("load", () => {
+    loader.style.opacity = "0";
+})
+
+// setTimeout(() => {
+//     loader.style.opacity = "0";
+// }, 5000);

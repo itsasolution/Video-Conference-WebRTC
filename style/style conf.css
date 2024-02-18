@@ -23,7 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 99999;
-  background-color: rgba(1, 86, 86, 0.367);
+    background-color: rgba(38, 1, 86, 0.367);
   backdrop-filter: blur(5px);
   transition: .8s ease;
 }

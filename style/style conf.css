@@ -10,6 +10,79 @@ body {
   background-color: #1c1c1c;
 }
 
+
+/* loader ___________________ */
+.loader {
+  position: fixed;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  background-color: rgba(1, 86, 86, 0.367);
+  backdrop-filter: blur(5px);
+  transition: .8s ease;
+}
+
+.waves {
+  height: 1em;
+  width: 5px;
+  margin: 4px;
+  border-radius: 5px;
+  background-color: orange;
+  transition: 0.5s;
+  animation: rot 3s ease-in-out infinite alternate;
+  animation: rot 3s ease-in-out infinite;
+}
+
+.waves:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.waves:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.waves:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.waves:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+@keyframes rot {
+  0% {
+      height: 20px;
+      background-color: pink;
+  }
+
+  25% {
+      height: 20px;
+      background-color: red;
+  }
+
+  50% {
+      transform: scale(1.5);
+      transform: rotate(60deg) translateY(40px);
+      height: 1em;
+      width: 1em;
+      border-radius: 50%;
+
+      box-shadow: 0 0 15px grey;
+  }
+
+  100% {
+      height: 20px;
+      background-color: orange;
+  }
+}
+
+/*_________________________________________________________  */
 .ptr {
   height: 10px;
   width: 10px;

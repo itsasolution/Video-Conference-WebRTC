@@ -263,6 +263,6 @@ document.getElementById('mic').addEventListener('click', toggleMic)
 document.getElementById('screen').addEventListener('click', toggleScreen)
 document.getElementById('leave').addEventListener('click', leaveStream)
 
-document.getElementById('join-btn').addEventListener('click', joinStream)
+// document.getElementById('join-btn').addEventListener('click', joinStream)
 
 joinRoomInit();

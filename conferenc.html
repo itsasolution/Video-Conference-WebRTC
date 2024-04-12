@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messier</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/style conf.css">
+</head>
+
+<body>
+    <!-- loader -->
+    <div class="loader">
+        <div class="waves"></div>
+        <div class="waves"></div>
+        <div class="waves"></div>
+        <div class="waves"></div>
+        <div class="waves"></div>
+    </div>
+
+    <!-- participants ______________ -->
+    <div id="mem">Members</div>
+
+    <div class="mem-repl ">
+        <i class="fa-solid fa-users"></i>
+    </div>
+
+    <div class="participants">
+        <section id="members__container">
+
+            <div id="members__header">
+                <p>Participants</p>
+                <strong id="members__count">0</strong>
+            </div>
+
+            <div id="member__list">
+
+                <!-- <div class="member__wrapper" id="member__2__wrapper">
+                    <span class="green__icon"></span>
+                    <span class="member_name">Piyush Patel</span>
+                </div> -->
+
+            </div>
+        </section>
+    </div>
+
+    <div class="ptr"></div>
+
+    <div id="main">
+
+        <nav id="nav">
+            <div class="logo cur"><img src="Images/logo.png" alt=""></div>
+            <!-- <h2 class="cur">Incognito</h2> -->
+            <h2 class="cur ">Messier</h2>
+        </nav>
+
+        <!-- streams container -->
+        <div class="cont">
+            <div id="stream__box"></div>
+            <div id="streams__container">
+
+                <!-- 
+                <div class="video__container" id="user-container-1">
+                    <h1>1</h1>
+                </div> -->
+
+            </div>
+        </div>
+
+
+        <div class="chat-box">
+
+            <div id="message-box"></div>
+
+            <form id="message__form" class="input">
+                <input type="text" name="message" id="input" placeholder="Send a message...." class="cur">
+                <button id="send" type="submit"> <i class="fa-regular fa-paper-plane"></i> </button>
+            </form>
+
+
+            <!-- _________________________________________________________ -->
+            <div id="block-cont">
+                <div class="blocks"></div>
+                <div class="blocks"></div>
+                <div class="blocks"></div>
+                <div class="blocks"></div>
+                <div class="blocks"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- action buttons  -->
+    <div class="optn">
+        <div class="intr">
+            <!-- <i class="fa-solid fa-microphone-slash"></i> -->
+            <div id="mic" class="icons cur">
+                <span>
+                    <i class="fa-solid fa-microphone"></i>
+                </span>
+                <h6> Mic</h6>
+            </div>
+
+            <div id="camera" class="icons cur">
+                <i class="fa-solid fa-video"></i>
+                <h6> Camera</h6>
+            </div>
+            <div id="leave" class="icons cur">
+                <i class="fa-solid fa-phone"></i>
+                <h6> Leave</h6>
+            </div>
+
+            <div id="chat-icon" class="icons cur">
+                <i class="fa-regular fa-comment"></i>
+                <h6> Chat</h6>
+            </div>
+            <div id="screen" class="icons cur">
+                <i id="i" class="fa-solid fa-display"></i>
+                <h6>Screen</h6>
+            </div>
+        </div>
+
+        <!-- block split into two fit width  -->
+        <div class="split">
+            <i class="fa-solid fa-border-all" title="resize"></i>
+            <p class="dblclick">split</p>
+        </div>
+        <div class="full">
+            <i class="fa-solid fa-expand" title="Full Screen"></i>
+            <p class="dblclick">full</p>
+        </div>
+
+        <div id="join-btn" class="cur">Join Room</div>
+
+    </div>
+
+    <script src="js/minor.js"></script>
+
+    <script type="text/javascript" src="js/AgoraRTC_N-4.11.0.js"></script>
+    <script type="text/javascript" src="js/agora-rtm-sdk-1.4.4.js"></script>
+    <script type="text/javascript" src="js/room_rtc.js"></script>
+    <script type="text/javascript" src="js/room_rtm.js"></script>
+</body>
+
+</html>

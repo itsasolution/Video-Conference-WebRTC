@@ -734,6 +734,7 @@ p,
 
 /* join  */
 #join-btn {
+  display:none;
   background-color: #ac4dce;
   font-size: 18px;
   padding: 25px 50px;
